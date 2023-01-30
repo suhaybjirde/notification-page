@@ -17,5 +17,10 @@ function makeItUnRead(notification) {
     notification.classList.remove('not-read');
     let nfContent = notification.querySelector('.nf-content')
     let dot = notification.querySelector('.nf-content .dot')
-    if (dot) nfContent.removeChild(dot)
+    if (dot) {
+        nfContent.removeChild(dot)
+        let left = document.querySelectorAll('.not-read').length
+        document.querySelector('.nf-count').innerText = left 
+    }
+    
 }
