@@ -6,120 +6,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
   <title>notification page</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <main>
+    <div class="container">
 
-    <div class="header">
-      <h1>notifications</h1>
-      <p class="mark-read">Mark all as read</p>
+      <div class="header">
+        <h1 class="title">Notifications <span class="nf-count">3</span></h1> 
+        <a href="#" class="mark-read">Mark all as read</a>
+      </div>
+  
+      <ul class="notifications">
+        
+        <li class="notification not-read">
+          <div class="nf-avatar">
+            <img src="assets/images/avatar-mark-webber.webp" alt="">
+          </div>
+          <div class="nf-info">
+            <div class="nf-content">
+              <a href="" class="name">Mark Webber</a>
+              <span class="activity">reacted to your recent post</span>
+              <a href="" class="post">My first tornament today!</a>
+              <span class="dot"></span>
+            </div>
+            <p class="date">1m ago</p>
+          </div>
+        </li>
+  
+        <li class="notification not-read">
+          <div class="nf-avatar">
+            <img src="assets/images/avatar-angela-gray.webp" alt="">
+          </div>
+          <div class="nf-info">
+            <div class="nf-content">
+              <a href="" class="name">Angela gray</a>
+              <span class="activity">followed you</span>
+              <span class="dot"></span>
+            </div>
+            <p class="date">5m ago</p>
+          </div>
+        </li>
+  
+        <li class="notification not-read">
+          <div class="nf-avatar">
+            <img src="assets/images/avatar-jacob-thompson.webp" alt="">
+          </div>
+          <div class="nf-info">
+            <div class="nf-content">
+              <a href="" class="name">Jacob Thomson</a>
+              <span class="activity">has joined your group</span>
+              <a href="" class="group">Chess Clup</a>
+              <span class="dot"></span>
+            </div>
+            <p class="date">5m ago</p>
+          </div>
+        </li>
+  
+        <li class="notification read">
+          <div class="nf-avatar">
+            <img src="assets/images/avatar-rizky-hasanuddin.webp" alt="">
+          </div>
+          <div class="nf-info">
+            <div class="nf-content">
+              <a href="" class="name">Rizk Hasanuddin</a>
+              <span class="activity">sent you a private message</span>
+            </div>
+            <p class="date">5 days ago</p>
+            <p class="message">hello, thanks for setting up the Chess Clup. I've been a member for a few weeks now and I'm already having lots of fan and improving my game</p>
+          </div>
+        </li>
+        
+        <li class="notification">
+          <div class="nf-avatar">
+            <img src="assets/images/avatar-kimberly-smith.webp" alt="">
+          </div>
+          <div class="nf-info">
+            <div class="nf-content">
+              <a href="" class="name">Kimberly Smith</a>
+              <span class="activity">has joined your group</span>
+            </div>
+            <p class="date">1 week ago</p>
+          </div>
+          <div class="nf-avatar-2">
+            <a href=""><img src="assets/images/image-chess.webp" alt=""></a>
+          </div>
+        </li>
+  
+        <li class="notification">
+          <div class="nf-avatar">
+            <img src="assets/images/avatar-nathan-peterson.webp" alt="">
+          </div>
+          <div class="nf-info">
+            <div class="nf-content">
+              <a href="" class="name">Nathan Peterson</a>
+              <span class="activity">reacted to you recent post</span>
+              <a href="" class="post">5 end-game strategies to increase your win rate</a>
+            </div>
+            <p class="date">2 weeks ago</p>
+          </div>
+        </li>
+  
+        <li class="notification">
+          <div class="nf-avatar">
+            <img src="assets/images/avatar-anna-kim.webp" alt="">
+          </div>
+          <div class="nf-info">
+            <div class="nf-content">
+              <a href="" class="name">Anna Kim</a>
+              <span class="activity">Left the group</span>
+              <a href="" class="group">Chess Clup</a>
+            </div>
+            <p class="date">5m ago</p>
+          </div>
+        </li>
+  
+      </ul>
     </div>
-
-    <ul class="notifications">
-      
-      <li class="notification not-read">
-        <div class="nf-avatar">
-          <img src="assets/images/avatar-angela-gray.webp" alt="">
-        </div>
-        <div class="nf-info">
-          <div class="nf-content">
-            <strong class="name">Mark Webber</strong>
-            <span class="activity">reacted to your recent post</span>
-            <span class="group">My first tornament today!</span>
-            <span class="dot"></span>
-          </div>
-          <p class="date">1m ago</p>
-        </div>
-      </li>
-
-      <li class="notification not-read">
-        <div class="nf-avatar">
-          <img src="assets/images/avatar-angela-gray.webp" alt="">
-        </div>
-        <div class="nf-info">
-          <div class="nf-content">
-            <strong class="name">Angela gray</strong>
-            <span class="activity">followed you</span>
-            <span class="dot"></span>
-          </div>
-          <p class="date">5m ago</p>
-        </div>
-      </li>
-
-      <li class="notification not-read">
-        <div class="nf-avatar">
-          <img src="assets/images/avatar-angela-gray.webp" alt="">
-        </div>
-        <div class="nf-info">
-          <div class="nf-content">
-            <strong class="name">Jacob Thomson</strong>
-            <span class="activity">has joined your group</span>
-            <span class="group">Chess Clup</span>
-            <span class="dot"></span>
-          </div>
-          <p class="date">5m ago</p>
-        </div>
-      </li>
-
-      <li class="notification read">
-        <div class="nf-avatar">
-          <img src="assets/images/avatar-angela-gray.webp" alt="">
-        </div>
-        <div class="nf-info">
-          <div class="nf-content">
-            <strong class="name">Rizk Hasanuddin</strong>
-            <span class="activity">sent you a private message</span>
-          </div>
-          <p class="date">5 days ago</p>
-          <p class="message">hello, thanks for setting up the Chess Clup. I've been a member for a few weeks now and I'm already having lots of fan and improving my game</p>
-        </div>
-      </li>
-      
-      <li class="notification read">
-        <div class="nf-avatar">
-          <img src="assets/images/avatar-angela-gray.webp" alt="">
-        </div>
-        <div class="nf-info">
-          <div class="nf-content">
-            <strong class="name">Jacob Thomson</strong>
-            <span class="activity">has joined your group</span>
-          </div>
-          <p class="date">1 week ago</p>
-        </div>
-        <div class="nf-avatar-2">
-          <img src="assets/images/avatar-jacob-thompson.webp" alt="">
-        </div>
-      </li>
-
-      <li class="notification read">
-        <div class="nf-avatar">
-          <img src="assets/images/avatar-angela-gray.webp" alt="">
-        </div>
-        <div class="nf-info">
-          <div class="nf-content">
-            <strong class="name">Jacob Thomson</strong>
-            <span class="activity">reacted to you recent post</span>
-            <span class="group">5 end-game strategies to increase your win rate</span>
-          </div>
-          <p class="date">2 weeks ago</p>
-        </div>
-      </li>
-
-      <li class="notification not-read">
-        <div class="nf-avatar">
-          <img src="assets/images/avatar-angela-gray.webp" alt="">
-        </div>
-        <div class="nf-info">
-          <div class="nf-content">
-            <strong class="name">Anna Kim</strong>
-            <span class="activity">Left the group</span>
-            <span class="group">Chess Clup</span>
-          </div>
-          <p class="date">5m ago</p>
-        </div>
-      </li>
-
-    </ul>
   </main>
 </body>
 </html>
