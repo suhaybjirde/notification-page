@@ -11,4 +11,4 @@ this is a front-mentor challenge
 - css 
 - and a little bit of javascript
 
-it's simple page chechout the Live site [Notification page]()
+it's simple page chechout the Live site [Notification page](https://notification-page3.netlify.app)
